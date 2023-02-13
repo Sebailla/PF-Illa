@@ -1,0 +1,20 @@
+/*Todo ---------- GRIDS ---------- */
+
+/*! - DECLARACION DE GRID ENCICLOPEDIA.HTML -*/
+
+.gripContainerEnciclopedia {
+    width: 100%;
+    margin: 0 auto;
+
+    /** Declaramos el grid con columnas y filas */
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 620px auto;
+
+    /** Declaramos Template areas */
+
+    grid-template-areas:
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+        "main main main main main main main main main aside aside aside";
+}

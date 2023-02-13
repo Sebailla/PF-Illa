@@ -1,0 +1,73 @@
+//* VARIABLES
+
+$color-bluelight-1: #05aff2;
+$color-bluelight-2: #1ea4d9; 
+$color-orange-1: #f2811d; 
+$color-orange-2: #f2ae72; 
+$color-withe-txt: #f2f2f2; 
+$color-gray-txt: #403f3f;
+$color-bg-shop: #cceef8;
+$color-bg-cardShop: #FFFFFF;
+
+$card-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); 
+
+$h1: 84px;
+$h2: 68px;
+$h3: 36px;
+$h4: 24px;
+$p: 16px;
+
+//* LISTAS
+
+$font-family:
+"Poppins",
+"Smooch";
+
+$font-size: 
+12px,
+14px,
+16px,
+18px,
+20px,
+24px,
+30px,
+35px,
+40px,
+50px;
+
+
+//* MAPAS
+
+$button:(
+    txt-decoration: none,
+    fnt-family: "Poppins",
+    fnt-weight: 400,
+    fnt-size: 16px,
+    txt-align: center,
+    borde: none,
+);
+
+//* EXTENDS
+
+%button-shadow{
+    background-color: $color-orange-2;
+    box-shadow: 5px 5px 5px -2px $color-orange-1;
+    color: $color-gray-txt;
+}
+
+//* MIXINS:
+
+@mixin flex-column ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-row ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+

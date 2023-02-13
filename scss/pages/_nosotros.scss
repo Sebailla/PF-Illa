@@ -1,0 +1,36 @@
+/*Todo----- NOSOTROS.HTML - BODY -----*/
+
+.we {
+    height: 100%;
+    margin: 20px 100px;
+    padding: 30px;
+}
+
+.we {
+    div {
+        @include flex-column (flex, column, center, baseline);
+    }
+}
+
+.we {
+    div {
+        h2 {
+            font-family: nth($font-family, 2);
+            font-size: $h2;
+            font-weight: 400;
+            color: $color-bluelight-2;
+        }
+    }
+}
+
+.we {
+    div {
+        p {
+            font-family: nth($font-family, 1);
+            font-size: $p;
+            font-weight: 200;
+            margin: 20px 0px;
+            text-align: justify;
+        }
+    }
+}

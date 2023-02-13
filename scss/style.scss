@@ -1,0 +1,27 @@
+// BASE ---------------------------
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/fuctions";
+
+// COMPONENTS ---------------------
+@import "./components/buttons";
+@import "./components/animations";
+
+// LAYOUTS ------------------------
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/grid";
+@import "./layouts/forms";
+@import "./layouts/footer";
+
+// PAGES --------------------------
+@import "./pages/index";
+@import "./pages/enciclopedia";
+@import "./pages/tienda";
+@import "./pages/contacto";
+@import "./pages/nosotros";
+
+// VENDOR -------------------------
+
+// UTILITIES ----------------------
+@import "./base/mediaquery";

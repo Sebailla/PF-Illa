@@ -1,0 +1,62 @@
+/*! -----  FORMS INDEX/NEWSLETTER ----- */
+
+.newsForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsForm {
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+.formEmail {
+    label {
+        margin-right: 20px;
+    }
+}
+
+.formButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter {
+    div {
+        form {
+            div {
+                input {
+                    margin: 0px 50px;
+                    padding: 0px 10px;
+                    width: 400px;
+                    height: 30px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/*! -----  FORMS CONTACT ----- */
+
+.contactForm {
+    margin: 50px 40px 75px 40px;
+}
+
+.contactForm {
+    div {
+        label {
+            font-family: "Poppins";
+            font-weight: 300;
+        }
+    }
+}

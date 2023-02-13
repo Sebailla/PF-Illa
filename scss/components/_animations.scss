@@ -1,0 +1,50 @@
+/*Todo ---------- ANIMATIONS ---------- */
+/*  KEYFRAM ENCICLOPEDIA.HTML - hero h1 */
+
+@keyframes hero {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*  KEYFRAM ENCICLOPEDIA.HTML - hero h1 */
+
+@keyframes hero_p {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,1546 @@
+@charset "UTF-8";
+/*  #######################    ARCHIVO DE ESTILOS DEL SITIO AQUALIFE - TODOS LOS DERECHOS RESERVADOS  #############################
+
+/*? REFERENCIAS DE COLORES:
+
+/*Todo 1 - CÓDIGO DE PAGINA
+/*!    2 - CÓDIGO GENERAL
+/**    3 - COMENTARIOS GENERALES
+/*?    4 - CÓDIGO COMPONENTS Y MEDIAQUERYS
+
+################################################################################################################################*/
+/*! ----- FONTS ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+/*! ----- GENERAL RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.btnIndexEnc:hover, .btn-ShopIndex:hover, .btn-newsletter:hover, .btn-cardEnc:hover, .btn-newsEnc:hover, .btn-cardShop:hover, .btn-contactForm:hover {
+  background-color: #f2ae72;
+  box-shadow: 5px 5px 5px -2px #f2811d;
+  color: #403f3f; }
+
+/*Todo ----- BUTTONS ----- */
+.btnIndexEnc {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 16px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  padding: 10px 15px;
+  width: 240px;
+  margin-bottom: 95px;
+  transition-duration: 0.5s; }
+
+.btn-ShopIndex {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  transition-duration: 0.5s; }
+
+.btn-newsletter {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  padding: 5px 15px;
+  width: 180px;
+  margin-top: 15px;
+  margin-bottom: 65px;
+  transition-duration: .5s; }
+
+.btn-cardEnc {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  width: 100px;
+  margin: 20px 60px 20px 0;
+  padding: 5px 10px;
+  transition-duration: 0.5s; }
+
+.btn-newsEnc {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  width: 100px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  transition-duration: 0.5s; }
+
+.btn-cardShop {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  width: 150px;
+  margin-top: 30px;
+  margin-right: 50px;
+  padding: 5px 10px;
+  transition-duration: 0.5s; }
+
+/*? ----- BUTTON CONTACT FORM ----- */
+.btn-contactForm {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  width: 100%;
+  height: 35px;
+  margin-top: 40px;
+  transition-duration: 0.5s; }
+
+/*Todo ---------- ANIMATIONS ---------- */
+/*  KEYFRAM ENCICLOPEDIA.HTML - hero h1 */
+@keyframes hero {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+
+/*  KEYFRAM ENCICLOPEDIA.HTML - hero h1 */
+@keyframes hero_p {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*! ----- HEADER ----- */
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+
+header nav div a img {
+  height: 120px;
+  width: 220px;
+  margin: 20px; }
+
+.nav-link {
+  font-family: "Poppins";
+  font-size: 20px;
+  transition-duration: .5ms; }
+
+a {
+  text-align: center; }
+
+.nav-link:hover {
+  border-bottom: 1px solid #f2811d;
+  font-weight: 400; }
+
+/*Todo ---------- GRIDS ---------- */
+/*! - DECLARACION DE GRID ENCICLOPEDIA.HTML -*/
+.gripContainerEnciclopedia {
+  width: 100%;
+  margin: 0 auto;
+  /** Declaramos el grid con columnas y filas */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 620px auto;
+  /** Declaramos Template areas */
+  grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero" "main main main main main main main main main aside aside aside"; }
+
+/*! -----  FORMS INDEX/NEWSLETTER ----- */
+.newsForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.newsForm div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px; }
+
+.formEmail label {
+  margin-right: 20px; }
+
+.formButton {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.newsletter div form div input {
+  margin: 0px 50px;
+  padding: 0px 10px;
+  width: 400px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+/*! -----  FORMS CONTACT ----- */
+.contactForm {
+  margin: 50px 40px 75px 40px; }
+
+.contactForm div label {
+  font-family: "Poppins";
+  font-weight: 300; }
+
+/*! ----- FOOTER ----- */
+footer {
+  background-color: whitesmoke;
+  padding-top: 60px; }
+
+.footerRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.footerRedes h3 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px; }
+
+.footerRedes ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 10px; }
+
+.footerRedes ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding: 10px; }
+
+.footerRedes ul li a img {
+  width: 24px;
+  height: 24px; }
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  padding: 20px; }
+
+.footerLogo a img {
+  width: 200px;
+  height: 100px; }
+
+.footerContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 20px; }
+
+.footerContacto h3 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px; }
+
+.footerContacto ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+
+.footerContacto ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding: 10px; }
+
+.footerContacto ul li a img {
+  width: 24px;
+  height: 24px; }
+
+.copyright {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 100; }
+
+.copyright h4 {
+  margin-right: 5px;
+  font-size: 10px; }
+
+.copyright h6 {
+  font-size: 10px; }
+
+.copyright img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+
+/*TODO ----- INDEX.HTML - BODY ----- */
+/** -----  HERO SECTION ----- */
+.hero {
+  width: 100%;
+  height: 670px;
+  background-image: url("../img/img_fondo/background_hero.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.hero div h1 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 78px;
+  margin-top: 35px;
+  padding: 15px; }
+
+.hero h2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 48px;
+  padding: 15px; }
+
+.hero div h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 800px;
+  padding: 30px; }
+
+.hero div h4 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 30px;
+  padding: 30px; }
+
+.hero div img {
+  padding-bottom: 20px; }
+
+/** -----  ENCICLOPEDIA SECTION ----- */
+.enciclopediaIndex {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/img_fondo/background_atlas_section_6.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.enciclopediaOver h2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 78px;
+  padding: 45px; }
+
+.enciclopediaOver h3 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Poppins";
+  font-weight: 300;
+  margin: 10px 160px; }
+
+/**------  SHOP SECTION -----*/
+.shopIndex {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #e0dddd;
+  background-image: url("../img/img_fondo/vecteezy_blue-water-on-white-background_1226797.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.shopIndex div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.shopIndex div div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.block1 {
+  margin: 20px 0px 40px 40px; }
+
+.block2 {
+  margin: 20px 40px 40px 0px; }
+
+.shopIndex h2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 78px;
+  margin-top: 25px;
+  padding: 15px; }
+
+.shopIndex div div div img {
+  width: 100%;
+  height: 250px;
+  margin: 0px 0px 10px 0px; }
+
+.shopIndex div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid rgb(171, 170, 170);*/
+  margin: 25px 25px;
+  text-align: center;
+  width: 250px;
+  height: 450px;
+  font-family: "Poppins";
+  background-color: white;
+  transition-duration: 0.5s; }
+  .shopIndex div div div:hover {
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.56); }
+
+.shopIndex div div div h4 {
+  margin-bottom: 10px; }
+
+.shopIndex div div div p {
+  font-size: 12px;
+  font-weight: 200;
+  text-align: justify;
+  margin: 0px 20px 10px 20px;
+  padding: 0px 10px; }
+
+/**-----  NEWSLETTER SECTION -----*/
+.newsletter {
+  width: 100%;
+  height: 650px;
+  font-family: "Poppins";
+  background-color: #b8e4fa; }
+
+.newsletter h2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 78px;
+  padding: 75px; }
+
+.newsletter h4 {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  margin: 10px 160px 50px 160px; }
+
+.newsletter div {
+  margin-top: 30px; }
+
+/*Todo ----- ENCICLOPEDIA.HTML ----- */
+/*! GRID: gripContainerEnciclopedia */
+/** ----- HERO ENCICLOPEDIA ----- */
+.heroEnc {
+  /** Declaramos a que grid-area pertenece */
+  grid-area: hero;
+  /** Distribuimos con FlexBox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.heroEnc {
+  width: auto;
+  height: 620px;
+  background-image: url("../img/img_fondo/background_atlas_section_4.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.heroEnciclopedia {
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.heroEnciclopedia h1 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: 300;
+  font-size: 84px;
+  margin-top: 15px;
+  padding: 15px;
+  text-shadow: 5px 5px 30px black;
+  /* Animation */
+  animation-name: hero;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial; }
+
+.heroEnciclopedia p {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 400;
+  color: #f2f2f2;
+  text-align: center;
+  width: 600px;
+  margin-top: 55px;
+  text-shadow: 5px 5px 30px black;
+  /* Animation */
+  animation-name: hero_p;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial; }
+
+.heroEnciclopedia img {
+  height: 100px; }
+
+/** ----- MAIN ENCICLOPEDIA ----- */
+.mainEnc {
+  /** Declaramos a que grid-area pertenece */
+  grid-area: main; }
+
+.enciclopedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 0; }
+
+.title1 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #1ea4d9;
+  font-weight: 300;
+  font-size: 68px;
+  margin-top: 25px;
+  padding: 15px; }
+
+.title2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 68px;
+  padding: 15px; }
+
+.enciclopedia h4 {
+  font-family: "Poppins";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 200;
+  font-size: 24px;
+  padding: 15px;
+  margin: 0px 50px; }
+
+/** Cards Left */
+.cardEnciclopediaLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretsh;
+  margin: 20px;
+  height: 250px;
+  font-family: "Poppins";
+  background-color: white;
+  transition-duration: 0.5s; }
+  .cardEnciclopediaLeft:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56); }
+
+.cardEnciclopediaLeft img {
+  width: 350px;
+  height: auto;
+  margin: 0; }
+
+.cardEnciclopediaLeft div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Poppins";
+  background-color: white; }
+
+.cardEnciclopediaLeft div h3 {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 50px;
+  padding: 15px; }
+
+.cardEnciclopediaLeft div p {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: justify;
+  height: 100px;
+  margin: 0 50px;
+  padding: 15px; }
+
+.cardEnciclopediaLeft div div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Poppins";
+  background-color: white; }
+
+/*! Cards Right */
+.cardEnciclopediaRight {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: stretsh;
+  margin: 20px;
+  height: 250px;
+  font-family: "Poppins";
+  background-color: white;
+  transition-duration: 0.5s; }
+  .cardEnciclopediaRight:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56); }
+
+.cardEnciclopediaRight img {
+  width: 350px;
+  height: auto;
+  margin: 0; }
+
+.cardEnciclopediaRight div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Poppins";
+  background-color: white; }
+
+.cardEnciclopediaRight div h3 {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 50px;
+  padding: 15px; }
+
+.cardEnciclopediaRight div p {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: justify;
+  height: 100px;
+  margin: 0 50px;
+  padding: 15px; }
+
+.cardEnciclopediaRight div div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Poppins";
+  background-color: white; }
+
+/** ----- ASIDE ENCICLOPEDIA ----- */
+.asideEnc {
+  /** Declaramos a que grid-area pertenece */
+  grid-area: aside;
+  /** Distribuimos con FlexBox */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15px; }
+
+.transparet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 15px; }
+
+.new h3 {
+  width: 100%;
+  padding: 15px;
+  font-family: "Smooch";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid #1ea4d9; }
+
+.newsEnc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.newsEnc div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 15px 10px 40px; }
+
+.newsCat {
+  background: 0;
+  border-left: 2px solid #f2811d;
+  border-right: 2px solid #f2811d;
+  color: #000 !important;
+  font-family: 'Comfortaa';
+  font-size: 16px;
+  letter-spacing: 2px;
+  width: 95%;
+  padding: 4px 6px 3px;
+  font-weight: bold; }
+
+.newsEnc figure img {
+  width: 100%; }
+
+.newsEnc figure figcaption {
+  font-family: 'Poppins';
+  font-size: 10px;
+  margin-bottom: 25px; }
+
+.newsEnc h5 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: 800;
+  color: #2d2b2b;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f2811d; }
+
+.newsEnc h6 {
+  width: 100%;
+  font-family: 'Poppins';
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: grey; }
+
+.newsEnc p {
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 300;
+  text-align: justify;
+  text-indent: 30px; }
+
+.newsEnc div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+/*Todo----- TIENDA.HTML  - BODY -----*/
+/**-----  HERO SECTION -----*/
+.heroShop {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/img_fondo/background_tienda_section_1.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.heroShop div {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.heroShop div h1 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #f2811d;
+  font-weight: 300;
+  font-size: 84px;
+  margin-top: 35px;
+  padding: 15px;
+  text-shadow: 5px 5px 30px black; }
+
+.welcomeShop {
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: 500;
+  color: #f2f2f2;
+  text-align: center;
+  text-shadow: 5px 5px 30px black; }
+
+.resumeShop {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 400;
+  color: #f2f2f2;
+  text-align: center;
+  width: 600px;
+  text-shadow: 5px 5px 30px black; }
+
+.heroShop div img {
+  height: 100px; }
+
+/**-----  TIENDA SECTION -----*/
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #e0dddd;
+  background-color: #cceef8;
+  padding: 88px; }
+
+.shop h2 {
+  font-family: "Smooch";
+  text-align: center;
+  color: #403f3f;
+  font-weight: 300;
+  font-size: 68px;
+  margin-top: 25px;
+  padding: 15px; }
+
+/** Cards Shop Left*/
+.cardShopLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 50px;
+  height: 300px;
+  font-family: "Poppins";
+  background-color: #FFFFFF;
+  transition-duration: 0.5s; }
+  .cardShopLeft:hover {
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); }
+
+.cardShopLeft img {
+  width: 450px;
+  height: 300px;
+  margin: 0; }
+
+.cardShopLeft div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 25px 50px;
+  text-align: justify;
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
+
+.cardShopLeft div div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 25px 50px;
+  text-align: justify;
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
+
+.cardShopLeft h3 {
+  font-size: 36px;
+  font-weight: 500; }
+
+.cardShopLeft p {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify; }
+
+/** Cards Shop Right*/
+.cardShopRight {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 50px;
+  height: 300px;
+  font-family: "Poppins";
+  background-color: #FFFFFF;
+  transition-duration: 0.5s; }
+  .cardShopRight:hover {
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); }
+
+.cardShopRight img {
+  width: 450px;
+  height: 300px;
+  margin: 0; }
+
+.cardShopRight div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 25px 50px;
+  text-align: justify;
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
+
+.cardShopRight div div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 25px 50px;
+  text-align: justify;
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
+
+.cardShopRight h3 {
+  font-size: 36px;
+  font-weight: 500; }
+
+.cardShopRight p {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify; }
+
+/*Todo----- CONTACTO.HTML - BODY -----*/
+/** BOOTSTRAMP */
+.contacto {
+  width: 100%;
+  margin-bottom: 100px; }
+
+.contacto h1 {
+  font-size: 72px;
+  font-family: "Smooch";
+  font-weight: 400;
+  color: #1ea4d9;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 15px; }
+
+.contacto h4 {
+  height: 100%;
+  margin: 20px 100px;
+  padding: 30px;
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center; }
+
+/*Todo----- NOSOTROS.HTML - BODY -----*/
+.we {
+  height: 100%;
+  margin: 20px 100px;
+  padding: 30px; }
+
+.we div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline; }
+
+.we div h2 {
+  font-family: "Smooch";
+  font-size: 68px;
+  font-weight: 400;
+  color: #1ea4d9; }
+
+.we div p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 200;
+  margin: 20px 0px;
+  text-align: justify; }
+
+/*Todo ---------- @MEDIAQUERY ---------- */
+/*? ----- @MEDIAQUERY HEADER ----- */
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    font-size: 16px; } }
+
+@media screen and (max-width: 577px) {
+  .logo img {
+    height: 100px;
+    width: 180px;
+    margin: 10px; } }
+
+/*? ----- @MEDIAQUERY INDEX.HTML/HERO ----- */
+@media screen and (max-width: 769px) {
+  .hero div h3 {
+    width: 600px;
+    font-size: 20px; } }
+
+@media screen and (max-width: 577px) {
+  .hero div h1 {
+    font-size: 68px; }
+  .hero h2 {
+    font-size: 35px; }
+  .hero div h3 {
+    width: 500px;
+    font-size: 18px; } }
+
+@media screen and (max-width: 450px) {
+  .hero div h3 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 450px; }
+  .hero div h4 {
+    margin: 20px;
+    padding: 20px; } }
+
+@media screen and (max-width: 376px) {
+  .hero {
+    height: 785px; }
+  .hero div h1 {
+    font-size: 58px; }
+  .hero h2 {
+    font-size: 30px; }
+  .hero div h3 {
+    width: 330px;
+    font-size: 18px; } }
+
+/*? ----- @MEDIAQUERY INDEX.HTML/ENCICLOPEDIA ----- */
+@media screen and (max-width: 577px) {
+  .enciclopediaOver h2 {
+    font-size: 68px; }
+  .enciclopediaOver h3 {
+    margin: 10px 60px;
+    font-size: 22px; } }
+
+@media screen and (max-width: 376px) {
+  .enciclopediaOver h2 {
+    font-size: 58px; }
+  .enciclopediaOver h3 {
+    margin: 10px 20px;
+    font-size: 20px; } }
+
+/*? ----- @MEDIAQUERY INDEX.HTML/SHOP ----- */
+@media screen and (max-width: 1250px) {
+  .block1 {
+    margin: 20px 40px 40px 40px; }
+  .block2 {
+    margin: 20px 40px 40px 40px; }
+  .shopIndex div div div {
+    margin: 25px 75px; } }
+
+@media screen and (max-width: 577px) {
+  .shopIndex h2 {
+    font-size: 68px; } }
+
+/*? ----- @MEDIAQUERY INDEX.HTML/NEWSLETTER ----- */
+@media screen and (max-width: 577px) {
+  .newsletter h2 {
+    font-size: 68px;
+    padding: 55px; }
+  .newsletter h4 {
+    margin: 10px 40px 40px 40px; }
+  .newsletter div form div input {
+    margin: 0px 50px;
+    padding: 0px 10px;
+    width: 280px; } }
+
+@media screen and (max-width: 451px) {
+  .newsletter div form div input {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    width: 170px; } }
+
+@media screen and (max-width: 361px) {
+  .newsletter div form div input {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    width: 200px; } }
+
+/*? ----- @MEDIAQUERY ENCICLOPEDIA.HTML ----- */
+@media screen and (max-width: 1156px) {
+  .cardEnciclopediaLeft img {
+    width: 330px;
+    margin: 0; }
+  .cardEnciclopediaRight img {
+    width: 330px;
+    margin: 0; }
+  .cardEnciclopediaLeft div h3 {
+    font-size: 24px;
+    margin: 15px 20px;
+    padding: 10px; }
+  .cardEnciclopediaRight div h3 {
+    font-size: 24px;
+    margin: 15px 20px;
+    padding: 10px; }
+  .cardEnciclopediaLeft div p {
+    font-size: 14px;
+    height: 100px;
+    margin: 0 10px; }
+  .cardEnciclopediaRight div p {
+    font-size: 14px;
+    height: 100px;
+    margin: 0 10px; } }
+
+@media screen and (max-width: 1051px) {
+  .gripContainerEnciclopedia {
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 620px auto auto;
+    grid-template-areas: "hero" "main" "aside"; }
+  .heroEnc {
+    grid-area: hero; }
+  .mainEnc {
+    grid-area: main; }
+  .asideEnc {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px; }
+  .transparet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .new h3 {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px; }
+  .newsEnc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretsh;
+    margin: 10px 15px 10px 40px;
+    width: 250px;
+    height: 100%; }
+  .newsCat {
+    width: 100%; }
+  .newsEnc figure img {
+    width: 100%;
+    height: 200px; } }
+
+@media screen and (max-width: 981px) {
+  .title2 {
+    font-size: 68px; }
+  .enciclopedia h3 {
+    font-size: 58px;
+    padding: 15px; }
+  .cardEnciclopediaLeft img {
+    width: 380px; }
+  .cardEnciclopediaLeft div h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px; }
+  .cardEnciclopediaLeft div p {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 14px; }
+  .cardEnciclopediaLeft div div a {
+    margin: 20px 40px 20px 0; }
+  .cardEnciclopediaRight img {
+    width: 380px; }
+  .cardEnciclopediaRight div h3 {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px; }
+  .cardEnciclopediaRight div p {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    padding: 15px; }
+  .cardEnciclopediaRight div div a {
+    margin: 20px 40px 20px 0; } }
+
+@media screen and (max-width: 769px) {
+  .enciclopedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 2500px; }
+  .heroEnciclopedia h1 {
+    font-size: 68px; }
+  .heroEnciclopedia p {
+    width: 500px; }
+  .title1 {
+    font-size: 36px; }
+  .title2 {
+    font-size: 36px;
+    padding: 15px; }
+  .enciclopedia h4 {
+    font-size: 20px; }
+  .cardEnciclopediaLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .cardEnciclopediaLeft div {
+    width: 380px; }
+  /*
+    .cardEnciclopediaLeft {
+        img {
+            width: 380px;
+        }
+    }
+
+    .cardEnciclopediaLeft {
+        div {
+            h3 {
+                height: 30px;
+                font-size: 34px;
+                font-weight: 300;
+                margin-left: 100px;
+                padding: 20px;
+            }
+        }
+    }
+
+    .cardEnciclopediaLeft {
+        div {
+            p {
+                width: 350px;
+                height: 150px;
+                margin: 20px 20px 0 20px;
+                padding: 15px;
+                font-size: nth($font-size, 2);
+            }
+        }
+    }
+
+    .cardEnciclopediaLeft {
+        div {
+            div {
+                a {
+                    margin: 10px 40px 30px 0;
+                }
+            }
+        }
+    }
+*/
+  .cardEnciclopediaRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  /*
+    .cardEnciclopediaRight {
+        div {
+            width: 380px;
+        }
+    }
+
+    .cardEnciclopediaRight {
+        img {
+            width: 380px;
+        }
+    }
+
+    .cardEnciclopediaRight {
+        div {
+            h3 {
+                height: 30px;
+                font-size: 34px;
+                font-weight: 300;
+                margin-left: 100px;
+                padding: 20px;
+            }
+        }
+    }
+
+    .cardEnciclopediaRight {
+        div {
+            p {
+                width: 350px;
+                height: 150px;
+                margin: 20px 20px 0 20px;
+                padding: 15px;
+            }
+        }
+    }
+
+    .cardEnciclopediaRight {
+        div {
+            div {
+                a {
+                    margin: 10px 40px 30px 0;
+                }
+            }
+        }
+    }*/
+  .transparet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 2000px; }
+  .new h3 {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px; }
+  .newsEnc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 0px 10px 40px;
+    width: 350px;
+    height: auto; }
+  .newsCat {
+    width: 100%; }
+  .newsEnc figure img {
+    width: 100%;
+    height: 200px; } }
+
+@media screen and (max-width: 577px) {
+  .enciclopedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .heroEnciclopedia p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 300;
+    width: 500px;
+    margin-top: 55px;
+    text-shadow: 5px 5px 30px black; }
+  .cardEnciclopediaLeft {
+    margin: 20px 0px; }
+  .cardEnciclopediaLeft div h3 {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 0; }
+  .cardEnciclopediaRight div h3 {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 0; } }
+
+@media screen and (max-width: 450px) {
+  .enciclopedia {
+    justify-content: space-around;
+    height: 3600px; }
+  .heroEnciclopedia h1 {
+    font-weight: 200;
+    font-size: 68px; }
+  .heroEnciclopedia p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 300;
+    width: 400px; }
+  .enciclopedia h2 {
+    font-size: 36px; }
+  .enciclopedia h3 {
+    font-size: 36px;
+    padding: 15px; }
+  .cardEnciclopediaLeft div h3 {
+    height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 30px; }
+  .cardEnciclopediaLeft div p {
+    margin: 0 20px 0 20px; }
+  .cardEnciclopediaRight div p {
+    margin: 0 20px 0 20px; }
+  .cardEnciclopediaRight div h3 {
+    height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 30px; }
+  .asideEnc {
+    margin-right: 10px; } }
+
+/*? ----- @MEDIAQUERY TIENDA.HTML ----- */
+@media screen and (max-width: 1151px) {
+  .cardShopLeft h3 {
+    font-size: 30px;
+    font-weight: 500; }
+  .cardShopLeft p {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: justify; }
+  .cardShopRight h3 {
+    font-size: 30px;
+    font-weight: 500; }
+  .cardShopRight p {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: justify; } }
+
+@media screen and (max-width: 860px) {
+  .shop {
+    padding: 40px; }
+  .shop h2 {
+    margin-top: 0px;
+    padding: 15px; }
+  .cardShopLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+    width: 450px;
+    height: auto; }
+  .cardShopLeft img {
+    width: 450px;
+    height: 300px;
+    margin: 0; }
+  .cardShopLeft div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px; }
+  .btn-cardShop {
+    margin-right: 0; }
+  .cardShopLeft h3 {
+    font-size: 36px; }
+  .cardShopLeft p {
+    font-size: 16px;
+    margin-top: 20px; }
+  .cardShopRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+    width: 450px;
+    height: auto; }
+  .cardShopRight img {
+    width: 450px;
+    height: 300px;
+    margin: 0; }
+  .cardShopRight div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px; }
+  .btn-cardShop {
+    margin-right: 0; }
+  .cardShopRight h3 {
+    font-size: 36px; }
+  .cardShopRight p {
+    font-size: 16px;
+    margin-top: 20px; } }
+
+@media screen and (max-width: 577px) {
+  .resumeShop {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 300;
+    color: #f2f2f2;
+    text-align: center;
+    width: 500px;
+    text-shadow: 5px 5px 30px black; }
+  .shop {
+    padding: 40px; }
+  .shop h2 {
+    margin-top: 0px;
+    padding: 15px; } }
+
+@media screen and (max-width: 450px) {
+  .heroShop {
+    height: 600px; }
+  .heroShop div {
+    height: 600px; }
+  .heroShop div h1 {
+    font-size: 58px; }
+  .welcomeShop {
+    font-size: 24px;
+    font-weight: 400; }
+  .resumeShop {
+    font-size: 16px;
+    width: 400px; }
+  .cardShopLeft {
+    width: 400px; }
+  .cardShopLeft img {
+    width: 400px; }
+  .cardShopRight {
+    width: 400px; }
+  .cardShopRight img {
+    width: 400px; } }
+
+/*? ----- @MEDIAQUERY CONTACTO.HTML ----- */
+@media screen and (max-width: 577px) {
+  .contacto h4 {
+    font-family: "Poppins";
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 50px; } }
+
+@media screen and (max-width: 450px) {
+  .contacto h4 {
+    margin: 20px 30px; } }
+
+/*? ----- @MEDIAQUERY NOSOTROS.HTML ----- */
+@media screen and (max-width: 769px) {
+  .we {
+    margin: 20px 50px; } }
+
+@media screen and (max-width: 577px) {
+  .we {
+    margin: 20px 50px;
+    padding: 20px; }
+  .we div h2 {
+    font-size: 50px; }
+  .we div p {
+    font-family: "Poppins";
+    font-size: 14px; } }

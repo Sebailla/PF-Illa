@@ -1,0 +1,136 @@
+/*Todo ----- BUTTONS ----- */
+
+.btnIndexEnc {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 3);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    padding: 10px 15px;
+    width: 240px;
+    margin-bottom: 95px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+}
+
+.btn-ShopIndex {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 1);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+
+}
+
+.btn-newsletter {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 3);
+    text-align: map-get($button, txt-align);
+    border: map-get($button, borde);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+
+    padding: 5px 15px;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 65px;
+    transition-duration: .5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+}
+
+
+.btn-cardEnc {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 1);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    width: 100px;
+    margin: 20px 60px 20px 0;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+
+}
+
+.btn-newsEnc {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 1);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    width: 100px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow
+    }
+}
+
+.btn-cardShop {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 1);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 50px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+}
+
+/*? ----- BUTTON CONTACT FORM ----- */
+.btn-contactForm {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 3);
+    text-align: map-get($button, txt-align);
+    border: map-get($button, borde);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    width: 100%;
+    height: 35px;
+    margin-top: 40px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+}
