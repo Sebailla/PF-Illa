@@ -58,26 +58,6 @@
     }
 }
 
-
-.btn-cardEnc {
-    text-decoration: map-get($button, txt-decoration);
-    font-family: map-get($button, fnt-family);
-    font-weight: map-get($button, fnt-size);
-    font-size: nth($font-size, 1);
-    text-align: map-get($button, txt-align);
-    color: $color-withe-txt;
-    background-color: $color-bluelight-1;
-    width: 100px;
-    margin: 20px 60px 20px 0;
-    padding: 5px 10px;
-    transition-duration: 0.5s;
-
-    &:hover {
-        @extend %button-shadow;
-    }
-
-}
-
 .btn-newsEnc {
     text-decoration: map-get($button, txt-decoration);
     font-family: map-get($button, fnt-family);
@@ -96,7 +76,7 @@
     }
 }
 
-.btn-cardShop {
+.btn-card {
     text-decoration: map-get($button, txt-decoration);
     font-family: map-get($button, fnt-family);
     font-weight: map-get($button, fnt-size);
@@ -107,6 +87,25 @@
     width: 150px;
     margin-top: 30px;
     margin-right: 50px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        @extend %button-shadow;
+    }
+}
+
+.btn-cardEnc {
+    text-decoration: map-get($button, txt-decoration);
+    font-family: map-get($button, fnt-family);
+    font-weight: map-get($button, fnt-size);
+    font-size: nth($font-size, 1);
+    text-align: map-get($button, txt-align);
+    color: $color-withe-txt;
+    background-color: $color-bluelight-1;
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 25px;
     padding: 5px 10px;
     transition-duration: 0.5s;
 

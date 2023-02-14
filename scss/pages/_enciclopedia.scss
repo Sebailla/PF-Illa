@@ -8,10 +8,7 @@
     grid-area: hero;
 
     /** Distribuimos con FlexBox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column(flex, column, center, center);
 }
 
 .heroEnc {
@@ -26,17 +23,14 @@
 
 .heroEnciclopedia {
     height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-column(flex, column, space-evenly, center);
 }
 
 .heroEnciclopedia {
     h1 {
-        font-family:nth($font-family, 2);
+        font-family: nth($font-family, 2);
         text-align: center;
-        color:$color-withe-txt;
+        color: $color-withe-txt;
         font-weight: 300;
         font-size: $h1;
         margin-top: 15px;
@@ -52,7 +46,7 @@
 
 .heroEnciclopedia {
     p {
-        font-family:nth($font-family,1);
+        font-family: nth($font-family, 1);
         font-size: nth($font-size, 6);
         font-weight: 400;
         color: $color-withe-txt;
@@ -67,6 +61,7 @@
         animation-direction: initial;
     }
 }
+
 .heroEnciclopedia {
     img {
         height: 100px;
@@ -83,10 +78,9 @@
 .enciclopedia {
     @include flex-column (flex, column, space-around, center);
     width: 100%;
-    height: 100%;
-    background-color: $color-withe-txt;
-    padding: 10px;
-    margin: 0;
+    border-top: 1px solid $color-bg-enciclopedia;
+    background-color: $color-bg-enciclopedia;
+    padding: 50px;
 }
 
 .title1 {
@@ -97,7 +91,6 @@
     font-size: $h2;
     margin-top: 25px;
     padding: 15px;
-
 }
 
 .title2 {
@@ -106,8 +99,8 @@
     color: $color-gray-txt;
     font-weight: 300;
     font-size: $h2;
+    margin-top: 25px;
     padding: 15px;
-
 }
 
 .enciclopedia {
@@ -115,69 +108,42 @@
         font-family: nth($font-family, 1);
         text-align: center;
         color: $color-gray-txt;
-        font-weight: 200;
+        font-weight: 300;
         font-size: $h4;
+        margin-top: 25px;
         padding: 15px;
-        margin: 0px 50px;
     }
 }
 
-/** Cards Left */
+/** Cards Left*/
 
 .cardEnciclopediaLeft {
-    @include flex-row (flex, row, space-evenly, stretsh);
-    margin: 20px;
-    height: 250px;
+    @include flex-row(flex, row, space-between, center);
     font-family: nth($font-family, 1);
-    background-color: white;
+    background-color: $color-bg-cardShop;
+    height: 330px;
+    margin: 20px 0;
     transition-duration: 0.5s;
 
     &:hover {
-        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56);
+        box-shadow: $card-shadow;
     }
 }
 
 .cardEnciclopediaLeft {
     img {
-        width: 350px;
-        height: auto;
-        margin: 0;
+        width: 450px;
+        height: 330px;
     }
 }
 
 .cardEnciclopediaLeft {
     div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        font-family: "Poppins";
-        background-color: white;
-    }
-}
-
-.cardEnciclopediaLeft {
-    div {
-        h3 {
-            height: 40px;
-            font-size: nth($font-size, 7);
-            font-weight: 500;
-            margin: 20px 50px;
-            padding: 15px;
-        }
-    }
-}
-
-.cardEnciclopediaLeft {
-    div {
-        p {
-            font-size: 14px;
-            font-weight: 200;
-            text-align: justify;
-            height: 100px;
-            margin: 0 50px;
-            padding: 15px;
-        }
+        @include flex-column (flex, column, space-between, flex-start);
+        margin: 10px 25px;
+        text-align: justify;
+        font-family: nth($font-family, 1);
+        background-color: $color-bg-cardShop;
     }
 }
 
@@ -185,11 +151,30 @@
     div {
         div {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            font-family: "Poppins";
-            background-color: white;
+            @include flex-row (flex, row, flex-end, flex-end);
+            text-align: justify;
+            font-family: nth($font-family, 1);
+            background-color: $color-bg-cardShop;
+        }
+    }
+}
+
+.cardEnciclopediaLeft {
+    div {
+        h3 {
+            margin-top: 15px;
+            font-size: $h3;
+            font-weight: 500;
+        }
+    }
+}
+
+.cardEnciclopediaLeft {
+    div {
+        p {
+            font-size: $p;
+            font-weight: 200;
+            text-align: justify;
         }
     }
 }
@@ -197,59 +182,32 @@
 /*! Cards Right */
 
 .cardEnciclopediaRight {
-    @include flex-row (flex, row-reverse, space-evenly, stretsh);
-    margin: 20px;
-    height: 250px;
-    font-family: "Poppins";
-    background-color: white;
+    @include flex-row(flex, row-reverse, space-between, center);
+    font-family: nth($font-family, 1);
+    background-color: $color-bg-cardShop;
+    height: 330px;
+    margin: 20px 0;
     transition-duration: 0.5s;
 
     &:hover {
-        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56);
+        box-shadow: $card-shadow;
     }
 }
 
 .cardEnciclopediaRight {
     img {
-        width: 350px;
-        height: auto;
-        margin: 0;
+        width: 450px;
+        height: 330px;
     }
 }
 
 .cardEnciclopediaRight {
     div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        font-family: "Poppins";
-        background-color: white;
-    }
-}
-
-.cardEnciclopediaRight {
-    div {
-        h3 {
-            height: 40px;
-            font-size: nth($font-size, 7);
-            font-weight: 500;
-            margin: 20px 50px;
-            padding: 15px;
-        }
-    }
-}
-
-.cardEnciclopediaRight {
-    div {
-        p {
-            font-size: 14px;
-            font-weight: 200;
-            text-align: justify;
-            height: 100px;
-            margin: 0 50px;
-            padding: 15px;
-        }
+        @include flex-column (flex, column, space-between, flex-start);
+        margin: 10px 25px;
+        text-align: justify;
+        font-family: nth($font-family, 1);
+        background-color: $color-bg-cardShop;
     }
 }
 
@@ -257,11 +215,30 @@
     div {
         div {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            font-family: "Poppins";
-            background-color: white;
+            @include flex-row (flex, row, flex-end, flex-end);
+            text-align: justify;
+            font-family: nth($font-family, 1);
+            background-color: $color-bg-cardShop;
+        }
+    }
+}
+
+.cardEnciclopediaRight {
+    div {
+        h3 {
+            margin-top: 15px;
+            font-size: $h3;
+            font-weight: 500;
+        }
+    }
+}
+
+.cardEnciclopediaRight {
+    div {
+        p {
+            font-size: $p;
+            font-weight: 200;
+            text-align: justify;
         }
     }
 }

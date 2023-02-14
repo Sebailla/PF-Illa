@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.btnIndexEnc:hover, .btn-ShopIndex:hover, .btn-newsletter:hover, .btn-cardEnc:hover, .btn-newsEnc:hover, .btn-cardShop:hover, .btn-contactForm:hover {
+.btnIndexEnc:hover, .btn-ShopIndex:hover, .btn-newsletter:hover, .btn-newsEnc:hover, .btn-card:hover, .btn-cardEnc:hover, .btn-contactForm:hover {
   background-color: #f2ae72;
   box-shadow: 5px 5px 5px -2px #f2811d;
   color: #403f3f; }
@@ -64,19 +64,6 @@
   margin-bottom: 65px;
   transition-duration: .5s; }
 
-.btn-cardEnc {
-  text-decoration: none;
-  font-family: "Poppins";
-  font-weight: 16px;
-  font-size: 12px;
-  text-align: center;
-  color: #f2f2f2;
-  background-color: #05aff2;
-  width: 100px;
-  margin: 20px 60px 20px 0;
-  padding: 5px 10px;
-  transition-duration: 0.5s; }
-
 .btn-newsEnc {
   text-decoration: none;
   font-family: "Poppins";
@@ -90,7 +77,7 @@
   padding: 5px 10px;
   transition-duration: 0.5s; }
 
-.btn-cardShop {
+.btn-card {
   text-decoration: none;
   font-family: "Poppins";
   font-weight: 16px;
@@ -101,6 +88,20 @@
   width: 150px;
   margin-top: 30px;
   margin-right: 50px;
+  padding: 5px 10px;
+  transition-duration: 0.5s; }
+
+.btn-cardEnc {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #05aff2;
+  width: 150px;
+  margin-top: 20px;
+  margin-right: 25px;
   padding: 5px 10px;
   transition-duration: 0.5s; }
 
@@ -473,7 +474,7 @@ footer {
 /**-----  NEWSLETTER SECTION -----*/
 .newsletter {
   width: 100%;
-  height: 650px;
+  height: 680px;
   font-family: "Poppins";
   background-color: #b8e4fa; }
 
@@ -566,10 +567,9 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100%;
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin: 0; }
+  border-top: 1px solid #e0dddd;
+  background-color: #e0dddd;
+  padding: 50px; }
 
 .title1 {
   font-family: "Smooch";
@@ -586,116 +586,113 @@ footer {
   color: #403f3f;
   font-weight: 300;
   font-size: 68px;
+  margin-top: 25px;
   padding: 15px; }
 
 .enciclopedia h4 {
   font-family: "Poppins";
   text-align: center;
   color: #403f3f;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 24px;
-  padding: 15px;
-  margin: 0px 50px; }
+  margin-top: 25px;
+  padding: 15px; }
 
-/** Cards Left */
+/** Cards Left*/
 .cardEnciclopediaLeft {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretsh;
-  margin: 20px;
-  height: 250px;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Poppins";
-  background-color: white;
+  background-color: #FFFFFF;
+  height: 330px;
+  margin: 20px 0;
   transition-duration: 0.5s; }
   .cardEnciclopediaLeft:hover {
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56); }
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); }
 
 .cardEnciclopediaLeft img {
-  width: 350px;
-  height: auto;
-  margin: 0; }
+  width: 450px;
+  height: 330px; }
 
 .cardEnciclopediaLeft div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  font-family: "Poppins";
-  background-color: white; }
-
-.cardEnciclopediaLeft div h3 {
-  height: 40px;
-  font-size: 30px;
-  font-weight: 500;
-  margin: 20px 50px;
-  padding: 15px; }
-
-.cardEnciclopediaLeft div p {
-  font-size: 14px;
-  font-weight: 200;
+  margin: 10px 25px;
   text-align: justify;
-  height: 100px;
-  margin: 0 50px;
-  padding: 15px; }
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
 
 .cardEnciclopediaLeft div div {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-end;
+  text-align: justify;
   font-family: "Poppins";
-  background-color: white; }
+  background-color: #FFFFFF; }
+
+.cardEnciclopediaLeft div h3 {
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 500; }
+
+.cardEnciclopediaLeft div p {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify; }
 
 /*! Cards Right */
 .cardEnciclopediaRight {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: stretsh;
-  margin: 20px;
-  height: 250px;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Poppins";
-  background-color: white;
+  background-color: #FFFFFF;
+  height: 330px;
+  margin: 20px 0;
   transition-duration: 0.5s; }
   .cardEnciclopediaRight:hover {
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.56); }
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); }
 
 .cardEnciclopediaRight img {
-  width: 350px;
-  height: auto;
-  margin: 0; }
+  width: 450px;
+  height: 330px; }
 
 .cardEnciclopediaRight div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  font-family: "Poppins";
-  background-color: white; }
-
-.cardEnciclopediaRight div h3 {
-  height: 40px;
-  font-size: 30px;
-  font-weight: 500;
-  margin: 20px 50px;
-  padding: 15px; }
-
-.cardEnciclopediaRight div p {
-  font-size: 14px;
-  font-weight: 200;
+  margin: 10px 25px;
   text-align: justify;
-  height: 100px;
-  margin: 0 50px;
-  padding: 15px; }
+  font-family: "Poppins";
+  background-color: #FFFFFF; }
 
 .cardEnciclopediaRight div div {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-end;
+  text-align: justify;
   font-family: "Poppins";
-  background-color: white; }
+  background-color: #FFFFFF; }
+
+.cardEnciclopediaRight div h3 {
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 500; }
+
+.cardEnciclopediaRight div p {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify; }
 
 /** ----- ASIDE ENCICLOPEDIA ----- */
 .asideEnc {
@@ -1103,11 +1100,17 @@ footer {
 
 /*? ----- @MEDIAQUERY ENCICLOPEDIA.HTML ----- */
 @media screen and (max-width: 1156px) {
+  .cardEnciclopediaLeft {
+    height: 300px; }
+  .cardEnciclopediaRight {
+    height: 300px; }
   .cardEnciclopediaLeft img {
-    width: 330px;
+    width: 400px;
+    height: 100%;
     margin: 0; }
   .cardEnciclopediaRight img {
-    width: 330px;
+    width: 400px;
+    height: 100%;
     margin: 0; }
   .cardEnciclopediaLeft div h3 {
     font-size: 24px;
@@ -1173,158 +1176,49 @@ footer {
     font-size: 68px; }
   .enciclopedia h3 {
     font-size: 58px;
-    padding: 15px; }
+    padding: 15px; } }
+
+@media screen and (max-width: 769px) {
+  .cardEnciclopediaLeft {
+    height: 250px;
+    margin: 10px 0; }
   .cardEnciclopediaLeft img {
-    width: 380px; }
+    width: 300px;
+    height: 250px; }
+  .cardEnciclopediaLeft div {
+    margin: 10px; }
   .cardEnciclopediaLeft div h3 {
     font-size: 24px;
     font-weight: 400;
-    margin: 20px; }
+    margin: 10px 5px;
+    padding: 10px; }
   .cardEnciclopediaLeft div p {
-    width: 350px;
-    height: 250px;
-    margin: 20px;
-    padding: 15px;
-    font-size: 14px; }
-  .cardEnciclopediaLeft div div a {
-    margin: 20px 40px 20px 0; }
-  .cardEnciclopediaRight img {
-    width: 380px; }
-  .cardEnciclopediaRight div h3 {
-    height: 30px;
-    font-size: 30px;
-    font-weight: 400;
-    margin-left: 20px; }
-  .cardEnciclopediaRight div p {
-    width: 350px;
-    height: 250px;
-    margin: 20px;
-    padding: 15px; }
-  .cardEnciclopediaRight div div a {
-    margin: 20px 40px 20px 0; } }
-
-@media screen and (max-width: 769px) {
-  .enciclopedia {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 2500px; }
-  .heroEnciclopedia h1 {
-    font-size: 68px; }
-  .heroEnciclopedia p {
-    width: 500px; }
-  .title1 {
-    font-size: 36px; }
-  .title2 {
-    font-size: 36px;
-    padding: 15px; }
-  .enciclopedia h4 {
-    font-size: 20px; }
-  .cardEnciclopediaLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  .cardEnciclopediaLeft div {
-    width: 380px; }
-  /*
-    .cardEnciclopediaLeft {
-        img {
-            width: 380px;
-        }
-    }
-
-    .cardEnciclopediaLeft {
-        div {
-            h3 {
-                height: 30px;
-                font-size: 34px;
-                font-weight: 300;
-                margin-left: 100px;
-                padding: 20px;
-            }
-        }
-    }
-
-    .cardEnciclopediaLeft {
-        div {
-            p {
-                width: 350px;
-                height: 150px;
-                margin: 20px 20px 0 20px;
-                padding: 15px;
-                font-size: nth($font-size, 2);
-            }
-        }
-    }
-
-    .cardEnciclopediaLeft {
-        div {
-            div {
-                a {
-                    margin: 10px 40px 30px 0;
-                }
-            }
-        }
-    }
-*/
+    font-size: 12px;
+    font-weight: 200;
+    text-align: justify; }
   .cardEnciclopediaRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  /*
-    .cardEnciclopediaRight {
-        div {
-            width: 380px;
-        }
-    }
-
-    .cardEnciclopediaRight {
-        img {
-            width: 380px;
-        }
-    }
-
-    .cardEnciclopediaRight {
-        div {
-            h3 {
-                height: 30px;
-                font-size: 34px;
-                font-weight: 300;
-                margin-left: 100px;
-                padding: 20px;
-            }
-        }
-    }
-
-    .cardEnciclopediaRight {
-        div {
-            p {
-                width: 350px;
-                height: 150px;
-                margin: 20px 20px 0 20px;
-                padding: 15px;
-            }
-        }
-    }
-
-    .cardEnciclopediaRight {
-        div {
-            div {
-                a {
-                    margin: 10px 40px 30px 0;
-                }
-            }
-        }
-    }*/
+    height: 250px;
+    margin: 10px 0; }
+  .cardEnciclopediaRight img {
+    width: 300px;
+    height: 250px; }
+  .cardEnciclopediaRight div {
+    margin: 10px; }
+  .cardEnciclopediaRight div h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 5px;
+    padding: 10px; }
+  .cardEnciclopediaRight div p {
+    font-size: 12px;
+    font-weight: 200;
+    text-align: justify; }
   .transparet {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 2000px; }
+    height: auto; }
   .new h3 {
     width: 100%;
     padding: 15px;
@@ -1333,6 +1227,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretsh;
     margin: 10px 0px 10px 40px;
     width: 350px;
     height: auto; }
@@ -1355,56 +1250,72 @@ footer {
     width: 500px;
     margin-top: 55px;
     text-shadow: 5px 5px 30px black; }
+  .title1 {
+    font-size: 40px; }
+  .title2 {
+    font-size: 40px; }
+  .enciclopedia h4 {
+    font-size: 18px; }
+  /** Cards Left*/
   .cardEnciclopediaLeft {
-    margin: 20px 0px; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: auto; }
+  .cardEnciclopediaLeft img {
+    width: 400px;
+    height: 300px; }
+  .cardEnciclopediaLeft div {
+    margin: 10px 20px;
+    height: 260px; }
   .cardEnciclopediaLeft div h3 {
-    height: 30px;
-    font-size: 30px;
-    font-weight: 400;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 0; }
+    font-size: 24px;
+    font-weight: 400; }
+  .cardEnciclopediaLeft div p {
+    font-size: 14px;
+    height: 130px; }
+  /** Cards Right*/
+  .cardEnciclopediaRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: auto; }
+  .cardEnciclopediaRight img {
+    width: 400px;
+    height: 300px; }
+  .cardEnciclopediaRight div {
+    margin: 10px 20px;
+    height: 260px; }
   .cardEnciclopediaRight div h3 {
-    height: 30px;
-    font-size: 30px;
-    font-weight: 400;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 0; } }
+    font-size: 24px;
+    font-weight: 400; }
+  .cardEnciclopediaRight div p {
+    font-size: 14px;
+    height: 130px; }
+  .asideEnc {
+    margin: 0px; }
+  .newsEnc {
+    margin: 10px 0px; } }
 
 @media screen and (max-width: 450px) {
   .enciclopedia {
-    justify-content: space-around;
-    height: 3600px; }
+    padding: 10px; }
   .heroEnciclopedia h1 {
     font-weight: 200;
-    font-size: 68px; }
+    font-size: 50px; }
   .heroEnciclopedia p {
-    font-family: "Poppins";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    width: 400px; }
+    width: 380px; }
   .enciclopedia h2 {
     font-size: 36px; }
   .enciclopedia h3 {
     font-size: 36px;
-    padding: 15px; }
-  .cardEnciclopediaLeft div h3 {
-    height: 40px;
-    font-size: 24px;
-    font-weight: 500;
-    margin-left: 30px; }
-  .cardEnciclopediaLeft div p {
-    margin: 0 20px 0 20px; }
-  .cardEnciclopediaRight div p {
-    margin: 0 20px 0 20px; }
-  .cardEnciclopediaRight div h3 {
-    height: 40px;
-    font-size: 24px;
-    font-weight: 500;
-    margin-left: 30px; }
-  .asideEnc {
-    margin-right: 10px; } }
+    padding: 15px; } }
 
 /*? ----- @MEDIAQUERY TIENDA.HTML ----- */
 @media screen and (max-width: 1151px) {
