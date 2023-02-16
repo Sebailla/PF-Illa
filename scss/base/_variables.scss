@@ -6,9 +6,11 @@ $color-orange-1: #f2811d;
 $color-orange-2: #f2ae72; 
 $color-withe-txt: #f2f2f2; 
 $color-gray-txt: #403f3f;
+$color-gray-txt-2: #2b2b2b;
 $color-bg-shop: #cceef8;
 $color-bg-cardShop: #FFFFFF;
 $color-bg-enciclopedia: #e0dddd;
+$color-bg-newsletter: #b8e4fa;
 
 $card-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); 
 
@@ -22,7 +24,8 @@ $p: 16px;
 
 $font-family:
 "Poppins",
-"Smooch";
+"Smooch",
+"Confortaa";
 
 $font-size: 
 12px,
@@ -39,11 +42,18 @@ $font-size:
 
 //* MAPAS
 
+$bg:(
+    position: center,
+    repeat: repeat,
+    size: cover,
+    attachment: fixed,
+);
+
 $button:(
     txt-decoration: none,
-    fnt-family: "Poppins",
+    fnt-family: nth($font-family, 1),
     fnt-weight: 400,
-    fnt-size: 16px,
+    fnt-size: nth($font-size, 3),
     txt-align: center,
     borde: none,
 );

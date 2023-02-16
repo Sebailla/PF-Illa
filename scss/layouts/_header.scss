@@ -24,8 +24,8 @@ header {
 }
 
 .nav-link {
-    font-family: "Poppins";
-    font-size: 20px;
+    font-family: nth($font-family, 1);
+    font-size: nth($font-size, 5);
     transition-duration: .5ms;
 }
 

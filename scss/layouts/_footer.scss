@@ -1,23 +1,19 @@
 /*! ----- FOOTER ----- */
 
 footer {
-    background-color: whitesmoke;
+    background-color: $color-withe-txt;
     padding-top: 60px;
 }
 
 .footerRedes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
+    @include flex-column(flex, column, space-evenly, center);
 }
 
 .footerRedes {
     h3 {
-        font-family: "Poppins";
+        font-family: nth($font-family, 1);
         font-weight: 300;
-        font-size: 18px;
+        font-size: nth($font-size, 4);
         text-align: center;
         padding: 10px;
     }
@@ -25,9 +21,7 @@ footer {
 
 .footerRedes {
     ul {
-        display: flex;
-        justify-content: space-between;
-        justify-content: center;
+        @include flex-row(flex, row, space-between, center);
         padding: 10px;
     }
 }
@@ -56,9 +50,7 @@ footer {
 }
 
 .footerLogo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flex-row(flex, row, center, center);
     margin: 10px;
     padding: 20px;
 }
@@ -73,19 +65,16 @@ footer {
 }
 
 .footerContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-column(flex, column, space-evenly,center);
     margin: 10px;
     padding: 20px;
 }
 
 .footerContacto {
     h3 {
-        font-family: "Poppins";
+        font-family: nth($font-family, 1);
         font-weight: 300;
-        font-size: 18px;
+        font-size: nth($font-size, 4);
         text-align: center;
         padding: 10px;
     }
@@ -93,9 +82,7 @@ footer {
 
 .footerContacto {
     ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-row(flex, row, space-between, center);
         padding: 10px;
     }
 }
@@ -124,13 +111,11 @@ footer {
 }
 
 .copyright {
+    @include flex-row (flex, row, center, center);
     width: 100%;
     margin-top: 50px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins";
+    font-family: nth($font-family, 1);
     font-weight: 100;
 }
 

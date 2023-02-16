@@ -1,16 +1,12 @@
 /*! -----  FORMS INDEX/NEWSLETTER ----- */
 
 .newsForm {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex-column (flex, column, center, center);
 }
 
 .newsForm {
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row(flex, row,center, center);
         margin: 5px;
         padding: 5px;
     }
@@ -23,9 +19,7 @@
 }
 
 .formButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-row(flex, row, center, center);
 }
 
 .newsletter {
@@ -37,9 +31,9 @@
                     padding: 0px 10px;
                     width: 400px;
                     height: 30px;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: nth($font-family, 1);
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: nth($font-size, 3);
                 }
             }
         }
@@ -55,7 +49,7 @@
 .contactForm {
     div {
         label {
-            font-family: "Poppins";
+            font-family: nth($font-family, 1);
             font-weight: 300;
         }
     }

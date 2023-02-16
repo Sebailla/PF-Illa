@@ -189,11 +189,13 @@ a {
 /*! -----  FORMS INDEX/NEWSLETTER ----- */
 .newsForm {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: column; }
+  align-items: center; }
 
 .newsForm div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 5px;
@@ -204,6 +206,7 @@ a {
 
 .formButton {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -212,7 +215,7 @@ a {
   padding: 0px 10px;
   width: 400px;
   height: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
   font-weight: 300;
   font-size: 16px; }
 
@@ -226,7 +229,7 @@ a {
 
 /*! ----- FOOTER ----- */
 footer {
-  background-color: whitesmoke;
+  background-color: #f2f2f2;
   padding-top: 60px; }
 
 .footerRedes {
@@ -244,8 +247,9 @@ footer {
 
 .footerRedes ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  justify-content: center;
+  align-items: center;
   padding: 10px; }
 
 .footerRedes ul li {
@@ -259,8 +263,9 @@ footer {
 
 .footerLogo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 10px;
   padding: 20px; }
 
@@ -285,6 +290,7 @@ footer {
 
 .footerContacto ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px; }
@@ -299,12 +305,13 @@ footer {
   height: 24px; }
 
 .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 50px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Poppins";
   font-weight: 100; }
 
@@ -343,7 +350,7 @@ footer {
   text-align: center;
   color: #403f3f;
   font-weight: 300;
-  font-size: 78px;
+  font-size: 84px;
   margin-top: 35px;
   padding: 15px; }
 
@@ -376,12 +383,12 @@ footer {
 
 /** -----  ENCICLOPEDIA SECTION ----- */
 .enciclopediaIndex {
-  width: 100%;
-  height: 680px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 680px;
   background-image: url("../img/img_fondo/background_atlas_section_6.jpg");
   background-position: center;
   background-repeat: repeat;
@@ -391,14 +398,14 @@ footer {
 .enciclopediaOver h2 {
   font-family: "Smooch";
   text-align: center;
-  color: whitesmoke;
+  color: #f2f2f2;
   font-weight: 300;
-  font-size: 78px;
+  font-size: 68px;
   padding: 45px; }
 
 .enciclopediaOver h3 {
   text-align: center;
-  color: whitesmoke;
+  color: #f2f2f2;
   font-family: "Poppins";
   font-weight: 300;
   margin: 10px 160px; }
@@ -416,12 +423,14 @@ footer {
 
 .shopIndex div {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
 
 .shopIndex div div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -436,7 +445,7 @@ footer {
   text-align: center;
   color: #403f3f;
   font-weight: 300;
-  font-size: 78px;
+  font-size: 68px;
   margin-top: 25px;
   padding: 15px; }
 
@@ -450,13 +459,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /*border: 1px solid rgb(171, 170, 170);*/
   margin: 25px 25px;
   text-align: center;
   width: 250px;
   height: 450px;
   font-family: "Poppins";
-  background-color: white;
+  background-color: #FFFFFF;
   transition-duration: 0.5s; }
   .shopIndex div div div:hover {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.56); }
@@ -483,7 +491,7 @@ footer {
   text-align: center;
   color: #403f3f;
   font-weight: 300;
-  font-size: 78px;
+  font-size: 68px;
   padding: 75px; }
 
 .newsletter h4 {
@@ -725,20 +733,19 @@ footer {
 .newsEnc {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
-.newsEnc div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 10px 15px 10px 40px; }
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  transition-duration: 0.5s; }
+  .newsEnc:hover {
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.56); }
 
 .newsCat {
   background: 0;
   border-left: 2px solid #f2811d;
   border-right: 2px solid #f2811d;
   color: #000 !important;
-  font-family: 'Comfortaa';
+  font-family: "Confortaa";
   font-size: 16px;
   letter-spacing: 2px;
   width: 95%;
@@ -749,22 +756,22 @@ footer {
   width: 100%; }
 
 .newsEnc figure figcaption {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 10px;
   margin-bottom: 25px; }
 
 .newsEnc h5 {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Confortaa", cursive;
   font-size: 14px;
   font-weight: 800;
-  color: #2d2b2b;
+  color: #2b2b2b;
   margin-bottom: 5px;
   padding-bottom: 10px;
   border-bottom: 2px solid #f2811d; }
 
 .newsEnc h6 {
   width: 100%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 10px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -772,7 +779,7 @@ footer {
   color: grey; }
 
 .newsEnc p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 12px;
   font-weight: 300;
   text-align: justify;
@@ -780,8 +787,10 @@ footer {
 
 .newsEnc div {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 20px; }
 
 /*Todo----- TIENDA.HTML  - BODY -----*/
 /**-----  HERO SECTION -----*/
@@ -956,7 +965,7 @@ footer {
   margin-bottom: 100px; }
 
 .contacto h1 {
-  font-size: 72px;
+  font-size: 84px;
   font-family: "Smooch";
   font-weight: 400;
   color: #1ea4d9;
@@ -1020,7 +1029,7 @@ footer {
   .hero div h1 {
     font-size: 68px; }
   .hero h2 {
-    font-size: 35px; }
+    font-size: 36px; }
   .hero div h3 {
     width: 500px;
     font-size: 18px; } }
@@ -1048,6 +1057,8 @@ footer {
 
 /*? ----- @MEDIAQUERY INDEX.HTML/ENCICLOPEDIA ----- */
 @media screen and (max-width: 577px) {
+  .enciclopediaIndex {
+    height: 730px; }
   .enciclopediaOver h2 {
     font-size: 68px; }
   .enciclopediaOver h3 {

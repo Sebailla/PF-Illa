@@ -9,10 +9,10 @@
 
 .contacto {
     h1 {
-        font-size: 72px;
-        font-family: "Smooch";
+        font-size: $h1;
+        font-family: nth($font-family, 2);
         font-weight: 400;
-        color: #1ea4d9;
+        color: $color-bluelight-2;
         text-align: center;
         margin-bottom: 25px;
         padding: 15px;
@@ -24,9 +24,9 @@
         height: 100%;
         margin: 20px 100px;
         padding: 30px;
-        font-family: "Poppins";
+        font-family: nth($font-family, 1);
         font-weight: 200;
-        font-size: 24px;
+        font-size: $h4;
         text-align: center;
     }
 }
