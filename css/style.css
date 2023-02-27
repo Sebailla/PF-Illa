@@ -542,7 +542,7 @@ footer {
   text-shadow: 5px 5px 30px black;
   /* Animation */
   animation-name: hero;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-direction: initial; }
 
@@ -994,9 +994,9 @@ footer {
   justify-content: center;
   align-items: baseline; }
 
-.we div h2 {
+.we div h1 {
   font-family: "Smooch";
-  font-size: 68px;
+  font-size: 84px;
   font-weight: 400;
   color: #1ea4d9; }
 
@@ -1017,6 +1017,12 @@ footer {
   .logo img {
     height: 100px;
     width: 180px;
+    margin: 10px; } }
+
+@media screen and (max-width: 451px) {
+  .logo img {
+    height: 80px;
+    width: 150px;
     margin: 10px; } }
 
 /*? ----- @MEDIAQUERY INDEX.HTML/HERO ----- */
@@ -1086,6 +1092,17 @@ footer {
     font-size: 68px; } }
 
 /*? ----- @MEDIAQUERY INDEX.HTML/NEWSLETTER ----- */
+@media screen and (max-width: 720px) {
+  .newsletter h2 {
+    font-size: 68px;
+    padding: 55px; }
+  .newsletter h4 {
+    margin: 10px 40px 40px 40px; }
+  .newsletter div form div input {
+    margin: 0px 50px;
+    padding: 0px 10px;
+    width: 280px; } }
+
 @media screen and (max-width: 577px) {
   .newsletter h2 {
     font-size: 68px;
@@ -1182,14 +1199,12 @@ footer {
     width: 100%;
     height: 200px; } }
 
-@media screen and (max-width: 981px) {
+@media screen and (max-width: 984px) {
   .title2 {
     font-size: 68px; }
   .enciclopedia h3 {
     font-size: 58px;
-    padding: 15px; } }
-
-@media screen and (max-width: 769px) {
+    padding: 15px; }
   .cardEnciclopediaLeft {
     height: 250px;
     margin: 10px 0; }
@@ -1247,6 +1262,22 @@ footer {
   .newsEnc figure img {
     width: 100%;
     height: 200px; } }
+
+@media screen and (max-width: 636px) {
+  .enciclopedia {
+    padding: 20px; }
+  .heroEnciclopedia h1 {
+    font-size: 68px; }
+  .heroEnciclopedia p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 500px; }
+  .title1 {
+    font-size: 35px; }
+  .title2 {
+    font-size: 35px; }
+  .asideEnc {
+    margin: 0px; } }
 
 @media screen and (max-width: 577px) {
   .enciclopedia {
@@ -1312,7 +1343,7 @@ footer {
   .newsEnc {
     margin: 10px 0px; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .enciclopedia {
     padding: 10px; }
   .heroEnciclopedia h1 {
@@ -1327,6 +1358,48 @@ footer {
   .enciclopedia h3 {
     font-size: 36px;
     padding: 15px; } }
+
+@media screen and (max-width: 421px) {
+  .heroEnciclopedia p {
+    width: 300px; }
+  .title1 {
+    font-size: 35px; }
+  .title2 {
+    font-size: 35px; }
+  .enciclopedia h4 {
+    font-size: 16px; }
+  /** Cards Left*/
+  .cardEnciclopediaLeft {
+    width: 310px; }
+  .cardEnciclopediaLeft img {
+    width: 310px;
+    height: 250px; }
+  .cardEnciclopediaLeft div {
+    height: 280px; }
+  .cardEnciclopediaLeft div h3 {
+    font-size: 20px; }
+  .cardEnciclopediaLeft div p {
+    font-size: 12px;
+    height: 150px; }
+  /** Cards Right*/
+  .cardEnciclopediaRight {
+    width: 310px; }
+  .cardEnciclopediaRight img {
+    width: 310px;
+    height: 250px; }
+  .cardEnciclopediaRight div {
+    height: 280px; }
+  .cardEnciclopediaRight div h3 {
+    font-size: 20px; }
+  .cardEnciclopediaRight div p {
+    font-size: 12px;
+    height: 150px; }
+  .transparet {
+    margin: 0px; }
+  .newsEnc {
+    margin: 0px;
+    padding: 10px;
+    width: 320px; } }
 
 /*? ----- @MEDIAQUERY TIENDA.HTML ----- */
 @media screen and (max-width: 1151px) {
@@ -1429,15 +1502,15 @@ footer {
     font-weight: 400; }
   .resumeShop {
     font-size: 16px;
-    width: 400px; }
+    width: 330px; }
   .cardShopLeft {
-    width: 400px; }
+    width: 330px; }
   .cardShopLeft img {
-    width: 400px; }
+    width: 330px; }
   .cardShopRight {
-    width: 400px; }
+    width: 330px; }
   .cardShopRight img {
-    width: 400px; } }
+    width: 330px; } }
 
 /*? ----- @MEDIAQUERY CONTACTO.HTML ----- */
 @media screen and (max-width: 577px) {
@@ -1452,17 +1525,39 @@ footer {
   .contacto h4 {
     margin: 20px 30px; } }
 
+@media screen and (max-width: 351px) {
+  .contacto h1 {
+    font-size: 50px; }
+  .contacto h4 {
+    font-size: 18px; } }
+
 /*? ----- @MEDIAQUERY NOSOTROS.HTML ----- */
 @media screen and (max-width: 769px) {
   .we {
-    margin: 20px 50px; } }
+    margin: 20px 50px; }
+  .we div h1 {
+    font-size: 50px; } }
 
 @media screen and (max-width: 577px) {
   .we {
     margin: 20px 50px;
     padding: 20px; }
-  .we div h2 {
+  .we div h1 {
     font-size: 50px; }
+  .we div p {
+    font-family: "Poppins";
+    font-size: 14px; } }
+
+@media screen and (max-width: 441px) {
+  .we div h1 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 351px) {
+  .we {
+    margin: 20px 50px;
+    padding: 20px; }
+  .we div h1 {
+    font-size: 35px; }
   .we div p {
     font-family: "Poppins";
     font-size: 14px; } }
